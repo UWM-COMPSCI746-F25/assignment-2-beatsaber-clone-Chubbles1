@@ -13,7 +13,9 @@ Name: Thomas Dang
 
 UWM Email: tkdang@uwm.edu
 
-Third Party Assets: ChatGPT as a starting point, Google Gemini for bulk of code
+Third Party Assets: ChatGPT as a starting point, Google Gemini for bulk of code. 
+
+NOTE: Camera Reset functionality is currently on the "menu_button" of the left controller. The functionality of Oculus button (also called "menu_button") for the right controller I could not properly figure out how to override. 
 
 ## Getting Started
 
