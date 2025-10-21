@@ -19,8 +19,9 @@ func _spawn_cube():
 	var spawn_y = randf_range(1.0,2.0)
 	var spawn_z = -15.0
 	
-	new_cube.global_position = Vector3(spawn_x,spawn_y,spawn_z)
 	add_child(new_cube)
+	new_cube.global_position = Vector3(spawn_x,spawn_y,spawn_z)
+	
 
 func _reset_timer():
 	timer.wait_time = randf_range(0.5, 2.0)

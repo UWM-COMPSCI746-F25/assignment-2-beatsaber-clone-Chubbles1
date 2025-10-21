@@ -16,12 +16,16 @@ func _ready():
 	
 func _process(_delta):
 	line_renderer.visible = is_saber_on
-	var origin = global_position
-	var end = global_position - global_transform.basis.z
-	line_renderer.points[0] = origin
-	line_renderer.points[1] = end
-	
-	line_renderer._process(0.0)
+	if is_saber_on:
+		var origin = global_position
+		var end = global_position - global_transform.basis.z
+		line_renderer.points[0] = origin
+		line_renderer.points[1] = end
+		
+		line_renderer._process(0.0)
+	else:
+		line_renderer.mesh.clear_surfaces()
+		
 func _on_area_3d_area_entered(area):
 	if not is_saber_on:
 		return
@@ -34,7 +38,7 @@ func _on_area_3d_area_entered(area):
 
 #Toggle Laser Visibility
 func _on_button_pressed(button_name: String) -> void:
-	if (button_name == "a_button" and self.name == "Right") or (button_name == "x_button" and self.name == "Left"):
+	if (button_name == "ax_button"):
 		is_saber_on = not is_saber_on
 		
 		collision_shape.disabled = not is_saber_on
