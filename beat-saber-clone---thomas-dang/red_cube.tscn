@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpjner8fe0j57"]
+
+[ext_resource type="Script" uid="uid://b3inmdcut2pf4" path="res://red_cube.gd" id="1_lpcol"]
+[ext_resource type="Material" uid="uid://dokgepdf8flj" path="res://red.tres" id="2_rtj6n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lpcol"]
+
+[node name="red_cube" type="Node3D"]
+script = ExtResource("1_lpcol")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material_override = ExtResource("2_rtj6n")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_lpcol")
