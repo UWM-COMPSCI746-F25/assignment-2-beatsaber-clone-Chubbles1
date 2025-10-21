@@ -13,7 +13,7 @@ Name: Thomas Dang
 
 UWM Email: tkdang@uwm.edu
 
-Third Party Assets: ChatGPT as a starting point, dev.to post by Manasa Jayasri
+Third Party Assets: ChatGPT as a starting point, Google Gemini for bulk of code
 
 ## Getting Started
 
