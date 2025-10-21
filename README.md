@@ -9,11 +9,11 @@ In this assignment, you will be implementing Beat Saber's core mechanics. You ca
 
 You should fill out this information before submitting your assignment.  Make sure to document the name and source of any third party assets such as 3D models, textures, or any other content used that was not solely written by you.  Include sufficient detail for the instructor or TA to easily find them, such as a download link.
 
-Name: 
+Name: Thomas Dang
 
-UWM Email:
+UWM Email: tkdang@uwm.edu
 
-Third Party Assets:
+Third Party Assets: ChatGPT as a starting point, Google Gemini for bulk of code
 
 ## Getting Started
 
